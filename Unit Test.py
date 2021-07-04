@@ -11,3 +11,10 @@ class TestCalculator(unittest.TestCase):
         result = self.calc.add(4, 7)
         expected = 11
         self.assertEqual(result, expected)
+
+    def test_sub(self):
+        '''Test case function for subtraction'''
+        self.calc = Calculator()
+        result = self.calc.sub(10, 5)
+        expected = 5
+        self.assertEqual(result, expected)
