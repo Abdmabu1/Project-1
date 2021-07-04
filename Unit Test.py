@@ -39,3 +39,9 @@ class TestCalculator(unittest.TestCase):
         result = self.calc.sqr(10)
         expected = 100
         self.assertEqual(result, expected)
+
+    def test_sqr(self):
+        self.calc = Calculator()
+        result = self.calc.sqrt(100)
+        expected = 10
+        self.assertEqual(result, expected)
