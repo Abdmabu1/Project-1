@@ -18,3 +18,10 @@ class TestCalculator(unittest.TestCase):
         result = self.calc.sub(10, 5)
         expected = 5
         self.assertEqual(result, expected)
+
+    def test_mul(self):
+        '''Test case function for multiplication'''
+        self.calc = Calculator()
+        result = self.calc.mul(3, 7)
+        expected = 21
+        self.assertEqual(result, expected)
