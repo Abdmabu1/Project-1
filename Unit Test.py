@@ -25,3 +25,12 @@ class TestCalculator(unittest.TestCase):
         result = self.calc.mul(3, 7)
         expected = 21
         self.assertEqual(result, expected)
+
+    def test_div(self):
+        '''Test case function for division'''
+        self.calc = Calculator()
+        result = self.calc.div(10, 2)
+        expected = 4
+        self.assertEqual(result, expected)
+
+  
