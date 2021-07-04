@@ -33,4 +33,9 @@ class TestCalculator(unittest.TestCase):
         expected = 4
         self.assertEqual(result, expected)
 
-  
+    def test_sqr(self):
+        '''Test case function for division'''
+        self.calc = Calculator()
+        result = self.calc.sqr(10)
+        expected = 100
+        self.assertEqual(result, expected)
