@@ -3,9 +3,9 @@ FROM python:3.8
 # copy files from the host to the container filesystem.
 # For example, all the files in the current directory
 # to the  `/app` directory in the container
-COPY . /Project-1
+COPY . /app
 #  defines the working directory within the container
-WORKDIR /Project-1
+WORKDIR /app
 # run commands within the container.
 # For example, invoke a pip command
 # to install dependencies defined in the requirements.txt file.
